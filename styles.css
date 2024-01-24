@@ -120,7 +120,7 @@ a {
 }
 
 
-/*coisos arredondados (inspirados no flathub.org*/
+/*coisos arredondados (inspirados no flathub.org)*/
 .rounded {
   border-radius: .25rem
 }
@@ -227,17 +227,7 @@ hr {
   border-right: 0;
 }
 
-.border-0 {
-  border: 0
-}
 
-.margin-0 {
-  margin: 0
-}
-
-.flex-grow-0 {
-  flex-grow: 0
-}
 
 .flexcontainer {
   display: flex;
@@ -251,13 +241,7 @@ img {
   width: 15em;
 }
 
-.flex-row {
-  flex-direction: row;
-}
 
-.flex-column {
-  flex-direction: column;
-}
 
 .genericbutton {
   text-align: center;
@@ -274,13 +258,6 @@ img {
   transition: opacity 0.3s ease;
 }
 
-.hover\:opacity-75:hover {
-  opacity: .75;
-}
-
-.hover\:opacity-01:hover {
-  opacity: 0;
-}
 
 .spoiler {
   opacity: 0.7;
@@ -292,6 +269,27 @@ img {
   color: var(--myfontcolor);
   background-color: var(--mybackgroundcolor);
   transition: all 0.3s ease;
+}
+
+.border-0 {
+  border: 0
+}
+
+.margin-0 {
+  margin: 0
+}
+
+.flex-grow-0 {
+  flex-grow: 0
+}
+
+
+.flex-row {
+  flex-direction: row;
+}
+
+.flex-column {
+  flex-direction: column;
 }
 
 .justify-content-start {
