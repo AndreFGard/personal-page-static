@@ -10,6 +10,7 @@
   --flathubs-celestial-blue: #4A90D9;
   --myaccentcolor: var(--mygreen);
   --mynavbordercolor: var(--myaccentcolor);
+  --mygray1: #5e5c64;
 }
 
 
@@ -84,7 +85,13 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  transition: all .3s ease;
 }
+
+.card:hover {
+  scale: 1.02;
+}
+
 
 .cardscontainer:last-child {
   flex: 1 1 50%;
@@ -197,21 +204,41 @@ display-flex-center {
   margin: .3em;
 }
 
+.unifiedcardscontainer {
+  flex-direction: row;
+  gap: 0px;
+}
+
+.unifiedcard:not(:last-child):not(:first-child) {
+  border-left: 1px solid var(--myaccentcolor);
+  border-right: 1px solid var(--myaccentcolor);
+  border-top: 0;
+  border-bottom: 0;
+}
+
+
+
+.unifiedcard:first-child {
+  border-right: 0;
+}
+
+.border-0 {
+  border: 0;
+}
+
 .genericbutton {
   text-align: center;
   color: var(--myfontcolor);
   opacity: 1;
+  transition: all 0.s ease;
   transition: opacity 0.3s easet;
 }
 
 .genericbutton:hover {
   opacity: 0.75;
+  scale: 1.01;
+  transition: all 0.2s ease;
   transition: opacity 0.3s ease;
-}
-
-.runbuttonrun:hover {
-  transform: translateX(-10px);
-  color: red;
 }
 
 .hover\:opacity-75:hover {
@@ -222,18 +249,47 @@ display-flex-center {
   opacity: 0;
 }
 
-/*magic ahead: makes a barra colapse and wrap when the resolution is < 300*/
-@media all and (max-width: 420px) {
+.spoiler {
+  opacity: 0.7;
+  background-color: var(--mygray1);
+  transition: all 0.3s ease;
+}
+
+.spoiler:hover {
+  color: var(--myfontcolor);
+  background-color: var(--mybackgroundcolor);
+  transition: all 0.3s ease;
+}
+
+
+/*magic ahead: makes a barra colapsar e wrapar quando a resolucao é < 300*/
+@media all and (max-width: 720px) {
   .navbarcontainer {
     flex-wrap: wrap;
+    gap: .2em;
   }
 
+  .cardscontainer {
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-bottom: 2em;
+  }
+
+  .card {
+    margin: 4px;
+  }
+
+
+}
+
+@media all and (max-width: 420px) {
   .navbarcontainer>li {
     flex: 1 1 50%;
   }
-}
 
-@media all and (max-width: 200px) {
+  .navbarcontainer>span {
+    flex: 1 1 50%;
+  }
 
   .navbarcontainer>li {
     flex: 1 1 100%;
