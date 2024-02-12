@@ -2,7 +2,9 @@
   --mybackgroundcolor: #242424;
   --myfontcolor: #ffffff;
   --mynavbordercolor: #f8e45c;
-  --myhovercolor: #78aeed
+  --myhovercolor: #78aeed;
+  --regularbuttoncolor: #4a90d9;
+  --mydanger-bg-color: #c01c28;
 }
 
 html {
@@ -72,6 +74,8 @@ body {
   /* this could be used if it was desirable to have all cards a single card, with a border separating them, like flathub does
   border-width: 0 0 0 10px; */
   flex: 1 1 33%;
+  display: flex;
+  flex-direction: column;
   color: red;
 }
 
@@ -133,13 +137,57 @@ a {
   font-weight: 800
 }
 
+.h-5 {
+  height: 1.25rem
+}
 
+.h-6 {
+  height: 1.5rem
+}
+
+.h-7 {
+  height: 1.75rem
+}
 
 hr {
   margin-top: 1em;
   margin-bottom: 1em;
 }
 
+.bg-regularbutton {
+  background-color: var(--regularbuttoncolor);
+}
+
+.bg-dangerbutton {
+  background-color: var(--mydanger-bg-color);
+
+}
+
+.averagebutton {
+  padding: .5em;
+  flex: 0 1 1em;
+  margin: .2em;
+}
+
+.genericbutton {
+  text-align: center;
+  color: var(--myfontcolor);
+  opacity: 1;
+  transition: opacity 0.3s easet;
+}
+
+.genericbutton:hover {
+  opacity: 0.75;
+  transition: opacity 0.3s ease;
+}
+
+.hover\:opacity-75:hover {
+  opacity: .75;
+}
+
+.hover\:opacity-01:hover {
+  opacity: 0;
+}
 
 /*magic ahead: makes a barra colapse and wrap when the resolution is < 300*/
 @media all and (max-width: 300px) {
