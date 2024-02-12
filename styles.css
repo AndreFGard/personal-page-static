@@ -1,11 +1,17 @@
 :root {
   --mybackgroundcolor: #242424;
   --myfontcolor: #ffffff;
-  --mynavbordercolor: #f8e45c;
+  --mynavbordercolor: #8ff0a4;
   --myhovercolor: #78aeed;
   --regularbuttoncolor: #4a90d9;
   --mydanger-bg-color: #c01c28;
+
+  --mygreen: #33d17a;
+  --flathubs-celestial-blue: #4A90D9;
+  --myaccentcolor: var(--mygreen);
+  --mynavbordercolor: var(--myaccentcolor);
 }
+
 
 html {
   margin: 0;
@@ -33,6 +39,7 @@ body {
   text-rendering: optimizeSpeed;
   background-color: var(--mybackgroundcolor);
 }
+
 
 .navbarcontainer {
 
@@ -76,15 +83,14 @@ body {
   flex: 1 1 33%;
   display: flex;
   flex-direction: column;
-  color: red;
+  justify-content: space-between;
 }
 
 nav li,
 nav p,
 nav a {
   list-style: none;
-  /* aplicando sobre os elementos da flexbox*/
-  /* margin-right: 10px; */
+  /* aplicando sobre os elementos da nav*/
   display: inline-block;
   font-weight: 700;
 }
@@ -97,6 +103,7 @@ a:hover {
 a {
   color: inherit;
   transition: opacity 0.9s ease;
+  font-weight: 500;
 }
 
 
@@ -165,10 +172,18 @@ hr {
 
 }
 
+.bg-mygreen {
+  background-color: var(--mygreen);
+}
+
+.text-accentcolor {
+  color: var(--myaccentcolor)
+}
+
 .averagebutton {
   padding: .5em;
-  flex: 0 1 1em;
-  margin: .2em;
+  flex: 0 1 3em;
+  margin: .3em;
 }
 
 .genericbutton {
