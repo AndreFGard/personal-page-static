@@ -30,12 +30,12 @@ html {
 
 
 body {
-  height: 100vh;
+  height: 100%;
   max-width: 1200px;
   padding: 2em;
   margin: auto;
   max-width: 1100px;
-  min-height: 100vh;
+  min-height: 80vh;
   text-rendering: optimizeSpeed;
   background-color: var(--mybackgroundcolor);
 }
@@ -56,7 +56,7 @@ body {
 }
 
 .navbarcontainer> :last-child {
-  flex: 1 0 50%;
+  flex: 1 1 50%;
 }
 
 .lightercolor {
@@ -86,6 +86,11 @@ body {
   justify-content: space-between;
 }
 
+.cardscontainer:last-child {
+  flex: 1 1 50%;
+  text-align: center;
+}
+
 nav li,
 nav p,
 nav a {
@@ -100,7 +105,7 @@ a:hover {
   transition: opacity 0.3s ease
 }
 
-a {
+ffff211 a {
   color: inherit;
   transition: opacity 0.9s ease;
   font-weight: 500;
@@ -180,6 +185,12 @@ hr {
   color: var(--myaccentcolor)
 }
 
+display-flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .averagebutton {
   padding: .5em;
   flex: 0 1 3em;
@@ -198,6 +209,11 @@ hr {
   transition: opacity 0.3s ease;
 }
 
+.runbuttonrun:hover {
+  transform: translateX(-10px);
+  color: red;
+}
+
 .hover\:opacity-75:hover {
   opacity: .75;
 }
@@ -207,7 +223,7 @@ hr {
 }
 
 /*magic ahead: makes a barra colapse and wrap when the resolution is < 300*/
-@media all and (max-width: 300px) {
+@media all and (max-width: 420px) {
   .navbarcontainer {
     flex-wrap: wrap;
   }
