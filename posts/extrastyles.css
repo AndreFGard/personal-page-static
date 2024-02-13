@@ -1,0 +1,19 @@
+.linuxjokecard {
+    flex: 1 1 10px;
+    width: 5px;
+    border: 0;
+    transition: all 2s;
+}
+
+.linuxjokecard:hover {
+    background-color: var(--mydanger-bg-color);
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/a/af/Tux.png");
+    background-repeat: no-repeat;
+    color: transparent;
+    scale: 2;
+}
+
+.font-supersmall {
+    font-size: 40%;
+    opacity: 0.4;
+}
