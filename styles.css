@@ -159,6 +159,10 @@ a {
   font-weight: 800
 }
 
+.h3 {
+  height: 0.75em
+}
+
 .h-5 {
   height: 1.25rem
 }
@@ -247,20 +251,18 @@ img {
   text-align: center;
   color: var(--myfontcolor);
   opacity: 1;
-  transition: all 0.s ease;
-  transition: opacity 0.3s easet;
+  transition: all 0.3s ease;
 }
 
 .genericbutton:hover {
   opacity: 0.75;
-  scale: 1.01;
+  scale: 1.05;
   transition: all 0.2s ease;
-  transition: opacity 0.3s ease;
 }
 
 
 .spoiler {
-  opacity: 0.7;
+  opacity: 0.4;
   background-color: var(--mygray1);
   transition: all 0.3s ease;
 }
@@ -283,6 +285,9 @@ img {
   flex-grow: 0
 }
 
+.flex-grow-1{
+  flex-grow: 1
+}
 
 .flex-row {
   flex-direction: row;
