@@ -11,6 +11,8 @@
   --myaccentcolor: var(--mygreen);
   --mynavbordercolor: var(--myaccentcolor);
   --mygray1: #5e5c64;
+  --cardbackgroundcolor: #363636;
+  --navbarbackground: #1d1d1d;
 }
 
 
@@ -44,7 +46,7 @@ body {
 
 .navbarcontainer {
 
-  background-color: #1d1d1d;
+  background-color: var(--navbarbackground);
   display: flex;
   /* or inline-flex */
   flex-direction: row;
@@ -60,11 +62,12 @@ body {
   flex: 1 1 50%;
 }
 
-.lightercolor {
-  background-color: #363636;
+.card-background {
+  background-color: var(--cardbackgroundcolor);
 }
 
 
+/* card generico */
 .cardscontainer {
   display: flex;
   justify-content: center;
@@ -120,7 +123,7 @@ a {
 }
 
 
-/*coisos arredondados (inspirados no flathub.org)*/
+/*configuracoes de bordas arredondadas (inspirados no flathub.org)*/
 .rounded {
   border-radius: .25rem
 }
@@ -150,7 +153,7 @@ a {
 }
 
 
-
+/* configuracoes de texto */
 .font-bold {
   font-weight: 700
 }
@@ -175,11 +178,9 @@ a {
   height: 1.75rem
 }
 
-hr {
-  margin-top: 1em;
-  margin-bottom: 1em;
-}
 
+
+/* configuracoes de cores */
 .bg-regularbutton {
   background-color: var(--regularbuttoncolor);
 }
@@ -197,6 +198,8 @@ hr {
   color: var(--myaccentcolor)
 }
 
+
+/* atalhos  */
 .display-flex {
   display: flex;
 }
@@ -213,6 +216,9 @@ hr {
   margin: .3em;
 }
 
+/* 
+cards unificados (como os do flathub.org) que tem apenas uma separação
+entre eles ao invés de cada um ter a própria borda completa */
 .unifiedcardscontainer {
   flex-direction: row;
   gap: 0px;
@@ -224,8 +230,6 @@ hr {
   border-top: 0;
   border-bottom: 0;
 }
-
-
 
 .unifiedcard:first-child {
   border-right: 0;
@@ -246,7 +250,7 @@ img {
 }
 
 
-
+/* regras a serem adicionadas a botoes de todos os tipos */
 .genericbutton {
   text-align: center;
   color: var(--myfontcolor);
@@ -260,7 +264,7 @@ img {
   transition: all 0.2s ease;
 }
 
-
+/* texto spoiler */
 .spoiler {
   opacity: 0.4;
   background-color: var(--mygray1);
@@ -273,6 +277,7 @@ img {
   transition: all 0.3s ease;
 }
 
+/* atalhos para configurar borda, margem e comportamentos flex mais facilmente */
 .border-0 {
   border: 0
 }
@@ -322,15 +327,15 @@ img {
 }
 
 @media all and (max-width: 420px) {
+  /* alterar o tamanho dos items da navbar */
   .navbarcontainer>li {
     flex: 1 1 50%;
   }
 
+  /* remover separator quando a navbar wrapa */
   .navbarcontainer>span {
-    flex: 1 1 50%;
+    flex: 1 1 0%;
+    opacity: 0;
   }
 
-  .navbarcontainer>li {
-    flex: 1 1 100%;
-  }
 }
