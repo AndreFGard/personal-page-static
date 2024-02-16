@@ -4,81 +4,101 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/styles.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="icon" type="image/x-icon" href="./favicon.ico">
+    <title>afs15: ~/</title>
 </head>
 
 <body>
     <nav class="flexboxnav ">
         <ul class="navbarcontainer rounded-md">
-            <li><a href="/" class="link">$HOME</a></li>
+            <li><a href="./" class="link">$HOME</a></li>
             <span role="separator" aria-hidden="true"> | </span>
-            <li><a href="/redacted">~/projects</a></li>
+            <li><a href="./#informacoes">~/projects</a></li>
             <span role="separator" aria-hidden="true"> | </span>
-            <li><a href="/posts">~/posts</a></li>
+            <li><a href="./posts">~/posts</a></li>
         </ul>
         <hr aria-hidden="true" role="seperator">
     </nav>
 
     <main>
         <!-- /*TODO: make the cards be either displayed in a line or all one below the other*/ -->
-        <p>Todo o texto neste repositório é só filler, o texto de verdade não será disponibilizado no Github. lorem
-            ipsum dolor Oh, dear intergalactic beings, prepare yourself for a cosmic revelation that
-            will shake the very foundation of your understanding of software engineering! Ladies and gentlemen, meet
-            ZRAM—an acronym so grandiose, it defies the laws of brevity itself!.</p>
-
-        <div class="cardscontainer">
-            <p class="card lightercolor rounded-lg">It has shaken the very foundation of your understanding of
-                software engineering! Ladies and gentlemen, meet <strong>Zram!</strong> it's benevolence extends far
-                beyond mere performance enhancements; it also serves as a guardian angel, protecting
-                against system crashes caused by low memory conditions. Like a wise old sage, Zram whispers secrets of
-                stability to the kernel, ensuring that even under the heaviest loads, your machine remains as steady as
-                a rock in a hurricane.
-                <a class="rounded-lg bg-mygreen font-bold averagebutton genericbutton fadeonhover">ZRAM!!</a>
+        <header>
+            <p>Sou um estudante de primeiro período de CC (2023.2), desentusiasta de frontend, entusiasta de Linux,
+                <span class="spoiler">oxford comma,</span> entre outros. Aceito ajuda em AVLC ou MD.
             </p>
-            <p class="card lightercolor rounded-lg">ZRAM, my dear friends, transcends all mortal expectations,
-                surpassing even the legendary Fúba cake in splendor and
-                delight! Its virtues are so profound, they defy comprehension within our humble human realm. With ZRAM,
-                system performance reaches celestial heights, rendering lag a distant mythological creature.
-                <a class="rounded-lg bg-dangerbutton font-bold averagebutton genericbutton fadeonhover">Take the red
-                    pill (zram)</a>
-                <a class="rounded-lg bg-regularbutton font-bold averagebutton genericbutton">Blue pill (swap) </a>
+            <hr>
+        </header>
+        <h3>Alguns projetos em que estou trabalhando:</h3>
+        <ul>
+            <li><strong>find{n}.c:</strong> uma <em>tentativa</em> de reimplementar algo que lembre o comando find</li>
+            <li><a href="https://t.me/steaminlinebot">Bot inline do telegram</a> que fornece informações sobre jogos da
+                steam e
+                que me ensinou muito sobre web scraping e async</li>
+            <li><strong>Andrebot:</strong>meu bot do discord <span class="spoiler">privado, por ora</span>, que foi um
+                Lorem ipsum dolor sit amet, consectetur
+                Lorem ipsum dolor sit amet, consectetur programação. Com ele, dá pra <ul class="h-3">
+                    <li>Lorem ipsum dolor sit amet, consectetur"</li>
+                    <li>Lorem ipsum dolor sit amet, consectetur</li>
+                    <li>Lorem ipsum dolor sit amet, consectetur </li>
+                </ul>
+            </li>
+        </ul>
+        <p>É isso. Lorem ipsum dolor sit amet, consectetur. Não esqueça de me seguir no <a href="https://github.com/redacted">Github</a>, verificar o <a
+                class="spoiler rounded-md" href="./posts/easteregg.html">easteregg</a>, ver o showcase das funções da
+            página (em <a href="./posts">posts</a>, na navbar), usar ZRAM no seu Linux e de <strong
+                class="font-extrabold" style="text-decoration: underline;">não levar
+                as piadas a sério ;)</strong></p>
+        <hr>
+        <h3>FAQ - Frequently Not-Asked Questions - e links interessantes</h3>
+        <div class="cardscontainer">
+            <p class="card lightercolor rounded-lg">O que é zram?
+                <a class="rounded-lg bg-mygreen font-bold averagebutton genericbutton fadeonhover"
+                    href="https://wiki.archlinux.org/title/Zram">ZRAM!!</a>
+            </p>
+            <p class="card lightercolor rounded-lg">Como instalar Linux? Opiniões sobre nvidia?
+                <span class="flexcontainer flex-row">
+                    <a class="rounded-lg bg-dangerbutton font-bold averagebutton genericbutton fadeonhover flex-grow-1"
+                        href="./#linuxcard">Olhar o card dedicado</a>
+                </span>
+                <a class="rounded-lg bg-regularbutton font-bold averagebutton genericbutton"
+                    href="./posts/easteregg.html">Quero continuar a usar Windows
+                    unix-like!</a>
 
             </p>
         </div>
-        <p class="card lightercolor rounded-lg"><strong>How to install Linux</strong>First, you have to choose a
-            distribution of Linux. For beginners, sticking to the Ubuntu/debian base is probably a better idea, so
-            something like Linux Mint or Zorin OS should do.Afterwards, watching a tutorial on dual-botting ubuntu
-            would most likely also be smart. Learning how to linux - the verb - is truly a journey, and a very fun, so
-            dont rush it and never be afraid of asking or searching.</p>
+        <p class="card lightercolor rounded-lg" id="linuxcard"><strong>Dicas sérias sobre instalar
+                linux</strong>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+            ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+            dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+            deserunt mollit anim id est laborum</p>
 
-        <p>Bom, é isso. Não esqueça de me seguir no <a href="redacted">Github</a>, verificar o <a
-                class="spoiler rounded-md" href="/posts/easteregg.html">easteregg</a>, ver o showcase das funções da
-            página (em posts, na navbar)
-            e de não levar nada a sério ;)</p>
 
+        <hr>
         <div class="flexcontainer display-flex flex-row">
             <div class="card lightercolor rounded-md display-flex-center rounded-lg flex-grow-0">
-                <img class=" rounded-lg " src="/assets/pfp.jpg">
+                <img class="rounded-lg" src="./assets/pfp.jpg">
             </div>
-            <div class=" card  lightercolor rounded-lg margin-0 justify-content-start">
-                <h4>Informações</h4>
+
+            <div class=" card lightercolor rounded-lg margin-0 justify-content-start">
+                <h4 id="informacoes">Informações</h4>
                 <ul class="flex-row">
-                    <li>Nome</li>
-                    <li>Github: pato</li>
-                    <li>periodo</li>
+                    <li>Nome: Redacted</li>
+                    <li><a href="https://github.com/">Github</a></li>
+                    <li>Periodo: Redacted</li>
                 </ul>
             </div>
         </div>
         </div>
         <h4>Inspirações estéticas do site:</h4>
         <ul>
-            <li><a href=" https://flathub.org">Flathub.org</a>: uma loja/repositório de aplicativos flatpak</li>
-            <li><a href="https://usebottles.com">Bottles</a>: um aplicativo que facilita a criação de garrafas
+            <li><a href=" https://flathub.org">Flathub.org</a>: Lorem ipsum dolor sit amet, consectetur</li>
+            <li><a href="https://usebottles.com">Bottles</a>: Lorem ipsum dolor sit amet, consectetur
                 <em>wine</em>,facilitando o uso de aplicativos e jogos do Windows no Linux
             </li>
-            <li><a href="https://gnome.org">Adwaita</a>: O tema oficial do ambiente gráfico Gnome <span
-                    class="spoiler rounded-md">(apesar de eu ser um Plasma user)</span> e a sua <a
+            <li><a href="https://gnome.org">Adwaita</a>: Lorem ipsum dolor sit amet, consectetur <span
+                    class="spoiler rounded-md">(spoiler text)</span> e a sua <a
                     href="https://gnome.pages.gitlab.gnome.org/libadwaita/doc/main/named-colors.html">paleta de
                     cores</a></li>
         </ul>
