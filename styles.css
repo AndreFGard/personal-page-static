@@ -256,7 +256,7 @@ img {
 
 .genericbutton:hover {
   opacity: 0.75;
-  scale: 1.05;
+  scale: 1.02;
   transition: all 0.2s ease;
 }
 
